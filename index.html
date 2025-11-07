@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    #about { background-color: #f8f9fa; }
+    #projects { background-color: #ffffff; }
+    #contact { background-color: #f8f9fa; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portofolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container text-center mt-5" style="padding-top: 100px;">
+    <h1>Halo, Saya <span class="text-primary">Ibnu Yoga</span></h1>
+    <p class="lead">Mahasiswa TI | Web Developer Pemula</p>
+    <a href="#projects" class="btn btn-primary">Lihat Proyek Saya</a>
+  </div>
+
+
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="src/profil.jpeg" class="rounded-circle img-fluid" alt="Foto Profil">
+        </div>
+        <div class="col-md-8">
+          <h2>Tentang Saya</h2>
+        <p>
+            Halo! Nama saya <strong>Ibnu Al Wahit PraYoga</strong>, seorang mahasiswa aktif di jurusan <strong>Teknologi Informasi</strong>. 
+            Saat ini saya sedang menempuh pendidikan untuk memperdalam bidang pemrograman dan pengembangan perangkat lunak. 
+            Dunia teknologi selalu membuat saya penasaran, terutama bagaimana kode yang kita tulis bisa membentuk sesuatu yang hidup dan interaktif di layar.
+        </p>
+
+        <p>
+            Di luar kegiatan kuliah, saya memiliki hobi yang cukup kuat dalam bermain <strong>game</strong>. 
+            Bagi saya, game bukan hanya sekadar hiburan, tetapi juga bentuk karya seni yang memadukan desain, musik, dan logika pemrograman. 
+            Saya banyak belajar tentang alur berpikir logis dan kreativitas dari berbagai genre game mulai dari RPG, strategi, hingga game bergenre fantasy yang penuh dengan dunia imajinatif.
+        </p>
+
+        <p>
+            Dari ketertarikan itu, saya mulai menyukai pembuatan <strong>proyek yang berhubungan dengan game</strong>, 
+            terutama yang mengusung unsur <em>fantasy</em> dan petualangan. 
+            Saya senang mempelajari bagaimana sebuah dunia virtual dibangun, mulai dari sistem karakter, peta, hingga interaksi antar-objek di dalam game. 
+            Ke depannya, saya ingin terus mengembangkan kemampuan di bidang <strong>game development</strong> dan menciptakan karya yang bisa dinikmati banyak orang.
+        </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="text-center mb-4">Proyek Saya</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="src/projek1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Website Toko Online</h5>
+              <p class="card-text">Sebuah website sederhana untuk menampilkan produk menggunakan HTML dan CSS.</p>
+              <a href="#" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="src/projek2.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Game Sederhana</h5>
+              <p class="card-text">Proyek game mini 2D yang saya buat saat belajar Pygame.</p>
+              <a href="#" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="src/projek3.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Aplikasi Data Obat</h5>
+              <p class="card-text">Aplikasi desktop berbasis Java Swing untuk mengelola data obat di rumah sakit.</p>
+              <a href="#" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center mb-4">Hubungi Saya</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nama</label>
+              <input type="text" class="form-control" placeholder="Masukkan nama Anda">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="nama@email.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Pesan</label>
+              <textarea class="form-control" rows="4" placeholder="Tulis pesan Anda..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-0">&copy; 2025 Ibnu Yoga. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
